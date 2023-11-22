@@ -1,0 +1,115 @@
+﻿Exercices niveau difficile
+Exercice 1 : Fizz Buzz
+Demandez à l'utilisateur de saisir un nombre "N". Afficher tous les nombres allant de 0 à "N", avec les particularités suivantes :
+
+Remplacez tous les multiples de 3 par "FIZZ"​
+Remplacez tous les multiples de 5 par "BUZZ"​
+Remplacez tous les multiples de 3 ET 5 par "FIZZBUZZ"
+FIZZBUZZ​
+1​
+2​
+FIZZ​
+4​
+BUZZ​
+FIZZ
+Exercice 2 : Le Juste Prix
+Demandez à l'utilisateur de saisir un nombre de tentative (ce nombre de tentatives représentera le nombre d'échec possible)​. Générez un nombre aléatoire entre 0 et "N" saisie par l'utilisateur.​ Construisez le programme permettant de :​
+
+Saisir un nombre​
+Comparer le nombre avec le résultat attendu "N"​
+Afficher "Plus" ou "Moins"​
+Retirer une vie
+Exercice 3 : Le binaire
+Écrivez un algorithme qui permet de transformer un nombre en base 10 en un nombre en binaire.
+
+Une fois terminé, extrapolez pour toutes les bases.
+
+Exercice 4 : Le Romain
+Écrivez un algorithme qui transforme des nombres en base 10 en nombre romains.
+
+Exercice - : Le bowling
+Niveau : Difficile
+
+Le jeu se compose de 10 tours. Dans chaque tour, le joueur a deux lancers pour faire tomber 10 quilles. Le score du cadre est le nombre total de quilles abattues, plus les bonus pour les strikes et les spares. - On parle de réserve lorsque le joueur fait tomber les 10 quilles en deux lancers. Le bonus pour ce cadre est le nombre de quilles abattues au prochain lancer. - On parle de strike lorsque le joueur fait tomber les 10 quilles lors de son premier lancer. Le cadre est alors complété par un seul lancer. Le bonus pour ce cadre est la valeur des deux lancers suivants. - Dans le dixième carreau, un joueur qui a obtenu un spare ou un strike est autorisé à lancer les boules supplémentaires pour terminer le carreau. Toutefois, il ne peut pas lancer plus de trois boules dans le dixième tour.
+
+Plus de détails ici.
+
+La complexité de ce Kata réside dans le fait que le score doit-être calculé en live !
+Comme lorsque l'on va au bowling, lorsqu'on lance une boule on a un retour visuel direct.
+
+Exigences
+Ecrivez un programme qui attend une entrée utilisateur pour savoir le nombre de quilles tombées à chaque tour. Précisez à chaque fois le tour actuel, ainsi que le numéro du lancer. Une fois que l'utilisateur a précisé le nombre de quilles tombées, caclulez son score en live. A la fin de la partie, donnez lui son score réel.
+
+Aide
+Step 1 - Règles classiques
+Entrée : vide
+Score attendu : 0
+
+Entrée : 1
+Score attendu : 1
+
+Entrée : 2
+Score attendu : 2
+
+Entrée : 3, 2
+Score attendu : 5
+
+Entrée : 1, 6, 3, 5, 1, 2, 9, 0, 3, 2, 7, 2, 5, 4, 4, 3, 6, 2, 7, 2
+Score attendu : 74
+
+Step 2 - Le Spare
+Entrée : 1, 9
+Score attendu : 10
+
+Entrée : 1, 9, 4
+Score attendu : 18
+
+Entrée : 1, 9, 7, 3, 7, 2
+Score attendu : 43
+
+Step 3 - Le Strike
+Entrée : 10, 0, 0, 1, 0
+Score attendu : 11
+
+Entrée : 10, 2, 0, 5, 0
+Score attendu : 19
+
+Entrée : 10, 1, 4, 0, 0
+Score attendu : 20
+
+Entrée : 10, 10, 4, 0
+Score attendu : 42
+
+Entrée : 10, 10, 10, 0
+Score attendu : 60
+
+Step 4 - La fin de partie
+Entrée : 10, 10, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 0
+Score attendu : 52
+
+Entrée : 10, 10, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 5
+Score attendu : 57
+
+Entrée : 10, 10, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 10, 7, 2
+Score attendu : 61
+
+Entrée : 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+Score attendu : 300
+
+Exercice ? : Le tennis
+Créer un algorithme qui permet de gérer l'état d'une partie de tennis. Prenez en compte les différent types de partie, tels que le grand chelem, les opens, etc...
+
+Le programme prendra la liste des points 1 par 1, par joueur. Par exemple :
+
+let points = [1, 2, 1, 2, 2, 1, 2, 2, 1, 2, 2];
+
+Le programme devra afficher les résultats sous la forme d'un affichage classique du tennis :
+
+Finale de Roland Garros 2023 :
+
+| N. Djokovic | 7(7) | 6 | 7 |
+| C. Ruud | 6(1) | 3 | 5 |
+Dans le cas d'un match non terminé, il devra afficher le score actuel :
+
+| N. Djokovic | 7(7) | 1 | 40
+| C. Ruud | 6(1) | 2 | 30

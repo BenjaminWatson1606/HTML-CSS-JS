@@ -1,0 +1,79 @@
+﻿# Exercices niveau facile
+
+## Exercice 1 : Bienvenue
+
+Écrivez un programme qui demande à l'utilisateur de saisir son nom et de lui afficher son nom avec le message de bienvenue.
+
+Résultat attendu dans le terminal : Bienvenue Julien !
+
+---
+
+## Exercice 2 : 0 à 100
+
+Écrire un programme qui affiche les nombres de 0 à 100.
+
+---
+
+## Exercice 3 : Addition
+
+Écrivez un programme pour saisir deux nombres de l'utilisateur et calculer leur somme. L'utilisateur doit donc entrer deux valeurs, puis le programme calcule leur somme.
+
+Résultat attendu dans le terminal : 13 + 3 = 15
+
+---
+
+## Exercice 4 : Club d'enfants
+
+Écrivez un programme qui demande d'entrer l'âge d'un enfant et qui vérifie dans quel catégorie il est :
+
+- 12 ans ou plus = Cadet
+- 10 ans ou plus = Minime
+- 8 ans ou plus = Pupille
+- Autre = Poussin
+
+---
+
+## Exercice 5 : Profit ou perte
+
+Écrivez un programme qui demande à l'utilisateur de saisir le prix de fabrication et le prix de vente d'un produit et vérifiez-en le profit ou la perte.
+
+Si le prix de fabrication est supérieur au prix de vente, il y a perte sinon profit.
+
+---
+
+## Exercice 6 : Pair ou impair
+
+Écrire un programme qui demande à l'utilisateur de saisir un nombre et qui affiche si ce nombre est pair ou impair.
+
+---
+
+## Exercice 7 : Positif, négatif ou nul ?
+
+Écrire un programme qui demande un nombre à l'utilisateur puis vérifie si ce nombre est positif, négatif ou nul.
+
+---
+
+## Exercice 8 : Table de multiplication
+
+Écrivez un programme JS qui prend un nombre en entrée et affiche sa table de multiplication jusqu’à 10.
+
+Résultat attendu dans le terminal pour la table de 5 :
+
+```
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30
+5 x 7 = 35
+5 x 8 = 40
+5 x 9 = 45
+5 x 10 = 50
+```
+
+---
+
+## Exercice 9 : Somme du tableau
+
+Écrire une fonction qui prend un tableau d'entiers en paramètre et renvoie la somme de tous les éléments du tableau.
