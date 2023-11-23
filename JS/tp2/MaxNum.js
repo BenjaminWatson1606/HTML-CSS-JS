@@ -13,8 +13,12 @@ rl.question(`Give me a number `, (number1) => {
       const parsedNumber2 = parseFloat(number2);
       const parsedNumber3 = parseFloat(number3);
       // Checks if the input is an actual number or not
-      if (!isNaN(parsedNumber1) && !isNaN(parsedNumber2) && !isNaN(parsedNumber3)) {
-        const maxNumber = Math.max(parsedNumber1, parsedNumber2, parsedNumber3); // Uses Math.max to check which number is the largest
+      if (
+        !isNaN(parsedNumber1) &&
+        !isNaN(parsedNumber2) &&
+        !isNaN(parsedNumber3)
+      ) {
+        const maxNumber = Math.max(parsedNumber1, parsedNumber2, parsedNumber3); // Uses Math.max to check which number is the largest, YEAH SCIENCE oh wait
         console.log(`The big one's : ${maxNumber}`);
       } else {
         console.log("Those aren't even numbers son, you good ? ");

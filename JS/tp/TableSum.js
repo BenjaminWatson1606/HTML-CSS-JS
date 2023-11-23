@@ -28,7 +28,7 @@ rl.question("Give me a number boy ", (number1) => {
             !isNaN(parsedNumber4) &&
             !isNaN(parsedNumber5)
           ) {
-            // Add numbers to the array , was absolutely not necessary to do it like this, but why the fuck not ? 
+            // Add numbers to the array , was absolutely not necessary to do it like this, but why the hell not ?
             table.push(
               parsedNumber1,
               parsedNumber2,

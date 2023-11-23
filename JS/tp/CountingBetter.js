@@ -15,7 +15,9 @@ rl.question(`What's the first number ? `, (number1) => {
       const result = parsedNumber1 + parsedNumber2;
       console.log(`${parsedNumber1} + ${parsedNumber2} = ${result}`);
     } else {
-      console.log("Those aren't even numbers... I think ? I'm not too good with math and sh*t");
+      console.log(
+        "Those aren't even numbers... I think ? I'm not too good with math and sh*t"
+      );
     }
     rl.close();
   });

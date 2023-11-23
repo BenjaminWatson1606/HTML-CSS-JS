@@ -6,15 +6,21 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
+// Asks for userinput as usual and checks in which category his inputted age should be
 rl.question("How old are ya ? ", (userAge) => {
-  if (userAge >= 12) {
-    console.log("Cadet");
-  } else if (userAge >= 10 && userAge < 12) {
-    console.log("Minime");
-  } else if (userAge >= 8 && userAge < 10) {
-    console.log("Pupille");
+  const parsedNumber = parseFloat(userAge);
+  if (!isNaN(parsedNumber)) {
+    if (userAge >= 12) {
+      console.log("Cadet");
+    } else if (userAge >= 10 && userAge < 12) {
+      console.log("Minime");
+    } else if (userAge >= 8 && userAge < 10) {
+      console.log("Pupille");
+    } else {
+      console.log("Poussin");
+    }
   } else {
-    console.log("Poussin");
+    console.log("What even is that ?");
   }
   rl.close();
 });

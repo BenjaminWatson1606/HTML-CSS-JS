@@ -10,9 +10,8 @@ rl.question("Give me a number: ", (userInput) => {
   const parsedInput = parseInt(userInput);
 
   if (!isNaN(parsedInput)) {
-    // Loop through each level for the staircase
+    // Loop through each level for the staircase and places the appropriate amount of stars
     for (let i = 1; i <= parsedInput; i++) {
-
       // Print the * 'stairs ?' I guess, kinda spiky
       for (let k = 1; k <= i; k++) {
         process.stdout.write("*");

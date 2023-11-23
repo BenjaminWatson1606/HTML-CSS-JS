@@ -14,6 +14,7 @@ rl.question("What in tarnation you making ? ", (priceInput) => {
       // Checks if the input is an actual number or not
       const result = parsedNumber2 - parsedNumber1;
 
+      // Takes the inputs of store price and production price and calculates if you are selling the item cheaper, more expensive or at the same price as production price
       if (priceInput > storePrice) {
         console.log("You losing me money boy " + result);
       } else if (priceInput == storePrice) {

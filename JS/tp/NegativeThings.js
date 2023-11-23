@@ -8,6 +8,8 @@ const rl = readline.createInterface({
 
 rl.question("Give me a number boy ", (numberInput) => {
   const parsedNumber1 = parseFloat(numberInput); // Converts the inputs to numbers
+
+  // Asks for user input and then checks if the inputted number %2 = 0 to check it it's even or not
   if (!isNaN(parsedNumber1)) {
     // Checks if the input is an actual number or not
     if (parsedNumber1 == 0) {

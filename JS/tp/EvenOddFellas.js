@@ -6,6 +6,7 @@ const rl = readline.createInterface({
   output: process.stdout,
 });
 
+// Asks for user input and checks if the number is even or odd
 rl.question("Give me a number boy ", (numberInput) => {
   const parsedNumber1 = parseFloat(numberInput); // Converts the inputs to numbers
   if (!isNaN(parsedNumber1)) {

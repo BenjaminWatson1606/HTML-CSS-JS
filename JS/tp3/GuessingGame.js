@@ -32,7 +32,6 @@ function playGame(livesLeft) {
     const parsedInput = parseFloat(userGuess);
     // Check numbers as always Kevin
     if (!isNaN(parsedInput)) {
-
       // I mean like you win, that's the correct answer
       if (parsedInput === random) {
         console.log(

@@ -1,9 +1,10 @@
-﻿
-// List of notes ( not normally between 0-20 but just for example's sake))
-const notes = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]; 
+﻿// List of notes ( not normally between 0-20 but just for example's sake))
+const notes = [
+  0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+];
 
 // For loop from 0 to 20, gives comment for each note depending on scoring
-for (let i = 0; i <= 20; i++) { 
+for (let i = 0; i <= 20; i++) {
   if (i >= 0 && i <= 4) {
     console.log(`Note ${i} : What in God's name you smoking ?`);
   } else if (i >= 5 && i <= 10) {

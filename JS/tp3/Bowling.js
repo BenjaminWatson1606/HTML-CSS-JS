@@ -17,9 +17,7 @@ for (let i = 1; i <= 10; i++) {
     if (isNaN(score)) {
       console.log("That ain't even a number");
     } else if (score > 10) {
-      console.log(
-        "How the hell you get more then 10 ? Cheater do it again "
-      );
+      console.log("How the hell you get more then 10 ? Cheater do it again ");
     }
   } while (isNaN(score) || score > 10);
 

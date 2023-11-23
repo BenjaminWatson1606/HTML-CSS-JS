@@ -7,26 +7,28 @@ const rl = readline.createInterface({
 });
 
 rl.question("Give me a number: ", (userInput) => {
-    // Ensure the user input is a valid number
-    const parsedInput = parseInt(userInput);
-  
-    if (!isNaN(parsedInput)) {
-      const sum = calculateSum(parsedInput);
-      console.log(`The sum of numbers from 0 to ${parsedInput} is: ${sum}`);
-    } else {
-      console.log("That ain't even a number, can you give me whatever you smoking ?.");
-    }
-  
-    rl.close();
-  });
-
-
-function calculateSum(inputNumber) {
-    let sum = 0;
-  
-    for (let i = 0; i <= inputNumber; i++) {
-      sum += i;
-    }
-  
-    return sum;
+  // Ensure the user input is a valid number
+  const parsedInput = parseInt(userInput);
+  if (!isNaN(parsedInput)) {
+    // Calls function underneath
+    const sum = calculateSum(parsedInput);
+    console.log(`The sum of numbers from 0 to ${parsedInput} is: ${sum}`);
+  } else {
+    console.log(
+      "That ain't even a number, can you give me whatever you smoking ?."
+    );
   }
+
+  rl.close();
+});
+
+// function that loops from 0 to inputted number and gives the result of the sum of all numbers in between
+function calculateSum(inputNumber) {
+  let sum = 0;
+
+  for (let i = 0; i <= inputNumber; i++) {
+    sum += i;
+  }
+
+  return sum;
+}
