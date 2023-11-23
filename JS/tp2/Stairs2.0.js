@@ -23,7 +23,7 @@ rl.question("Give me a number: ", (userInput) => {
     // Loop through to place stars from the top to the bottom of the pyramid, so top -1 is starting point 
     for (let i = 1; i <= parsedInput; i++) {
 
-        // Now that's a pyramid
+        // Now that's a pyramid, prints out the stars 
         for (let k = parsedInput - 1; k >= i; k--) {
           process.stdout.write("*");
         }

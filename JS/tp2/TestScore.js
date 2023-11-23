@@ -9,7 +9,7 @@ for (let i = 0; i <= 20; i++) {
   } else if (i >= 5 && i <= 10) {
     console.log(`Note ${i} : Horsesh*t`);
   } else if (i >= 11 && i <= 14) {
-    console.log(`Note ${i} : My grandma can do better then that`);
+    console.log(`Note ${i} : My grandma can do better than that`);
   } else if (i >= 15 && i <= 17) {
     console.log(`Note ${i} : I mean it's alright`);
   } else if (i >= 18 && i <= 20) {

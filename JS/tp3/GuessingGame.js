@@ -56,7 +56,7 @@ function playGame(livesLeft) {
         console.log(
           "That was you're last life, it was " +
             random +
-            " sad to see you go...  Kevin you know what to do "
+            " sad to see you go... Kevin you know what to do "
         );
         rl.close();
       } else {

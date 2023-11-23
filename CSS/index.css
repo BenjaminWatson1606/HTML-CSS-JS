@@ -114,15 +114,14 @@ body {
   grid-template-columns: repeat(2, 1fr); 
   gap: 20px; 
   padding-left: 10%;
-  padding-top: 5%;
-  padding-right: 20%;
+  padding-right: 17%;
+  padding-top: 7%;
+  
 }
-
+  
 .content img {
-  min-width: 50%;
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  padding: 10px;
   transition: transform 0.5s;
   vertical-align: top;
 }
@@ -130,56 +129,21 @@ body {
 .content img:hover {
   z-index: 0;
   transform: perspective(2500px) rotateX(5deg) rotateY(10deg) scale3d(1, 1, 1);
-  
 }
-
-/* .captain{
-  width: 50%;
-  height: 50%;
-}
-
-.bandit{
-  width: 50%; 
-}
-
-.meme1{
-  width: 30%;
-}
-
-.meme2{
-  width: 50%;
-}
-
-.meme3 {
-  width: 30%;
-}
-.meme4{
-  width: 30%;
-}
-.meme5{
-  width: 30%;
-}
-.meme6{
-  width: 29.15%;
-}
-.meme7{
-  width: 20%;
-} */
 
 .news {
-  background-color: #0d0d0d; 
-  color: #002e58; 
-  padding: 5px;
+  background-color: #0d0d0d;
+  color: #002e58;
+  padding: 1%;
   position: fixed;
-  margin-top: 3.9%;
+  margin-top: 3%;
   top: 0;
   right: 0;
   bottom: 0;
-  width: 15.5%; 
   overflow-y: auto;
   scrollbar-width: thin;
+   
 }
-
 .news::-webkit-scrollbar {
   width: 5px;
 }
@@ -192,16 +156,42 @@ body {
 .topnews {
   background-color: #131212; 
   display: block; 
-  margin: 10px 50px;
   
 }
 
 .topnews p {
   font-size: 30px;
   font-weight: 500;
-  border-left: 2px solid #002e58;
   padding-left: 10px;
+  border-left: 2px solid #f7f7f7;
+  text-align: left;
   color: #ffffff;
+}
+
+.news-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.news-images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.news-images img{
+  max-width: 250px;
+ 
+}
+
+.news-text{
+  color: #ffffff;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 
