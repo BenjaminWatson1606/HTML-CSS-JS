@@ -13,7 +13,7 @@ rl.question("Give me a number: ", (userInput) => {
     // Loop through to place stars to the top of the pyramid
     for (let i = 1; i <= parsedInput; i++) {
 
-      // Them egyptians don't build pyramids like I do, this is only the first half though, don't judge just quite yet please and thank you kind sir
+      // Them egyptians don't build pyramids like I do, this is only the first half though, don't judge just quite yet please and thank you kind sir or mam
       for (let k = 1; k <= i; k++) {
         process.stdout.write("*");
       }

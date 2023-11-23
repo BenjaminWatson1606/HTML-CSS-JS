@@ -11,6 +11,7 @@ function getRandomInt(max) {
 
 const random = getRandomInt(100);
 
+// Start function that starts game, asks you how many lives you want and then goes and launches the game
 function startGame() {
   rl.question("How many bullets can you take ? ", (livesInput) => {
     const livesLeft = parseInt(livesInput);
@@ -25,12 +26,14 @@ function startGame() {
   });
 }
 
-// Loop functions that check based on the number of lives left if you can play and what you decide to play and if what you played was good or not
+// Loop functions that check based on the number of lives left if you can play, what you decide to play and if what you played was good or not
 function playGame(livesLeft) {
   function checkGuess(userGuess) {
     const parsedInput = parseFloat(userGuess);
-
+    // Check numbers as always Kevin
     if (!isNaN(parsedInput)) {
+
+      // I mean like you win, that's the correct answer
       if (parsedInput === random) {
         console.log(
           "That's the right number, guess you can survive, for now anyways "
@@ -48,10 +51,12 @@ function playGame(livesLeft) {
 
       livesLeft--;
 
+      // You died, no more lives left, ran out, gone, he dead
       if (livesLeft === 0) {
         console.log(
-          "That was you're last life, sad to see you go... Kevin you know what to do " +
-            random
+          "That was you're last life, it was " +
+            random +
+            " sad to see you go...  Kevin you know what to do "
         );
         rl.close();
       } else {
@@ -62,7 +67,7 @@ function playGame(livesLeft) {
       rl.question(`Try again: ${livesLeft} `, checkGuess);
     }
   }
-
+  // Asks what number you choosing
   rl.question(
     `Guess a number between 0 and 100. Lives left: ${livesLeft} `,
     checkGuess

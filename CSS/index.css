@@ -1,6 +1,6 @@
 ﻿@font-face {
   font-family: 'Risk'; 
-  src: url('/assets/fonts/Bombardier-Regular.ttf') format('truetype');
+  src: url('../assets/fonts/Bombardier-Regular.ttf') format('truetype');
 }
 
 body {
@@ -31,7 +31,7 @@ body {
 }
 
 .home-link {
-  background-image: url("/assets/Risk_of_Rain_2_Logo.png");
+  background-image: url("../assets/Risk_of_Rain_2_Logo.png");
   background-size: contain;
   background-repeat: no-repeat;
   width: 200px;
